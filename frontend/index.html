@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DBT Saathi</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
 
   <!-- Navbar -->
   <header class="navbar">
-    <div class="logo"><a href="index.html">🔒 DBT Saathi</a></div>
+    <div class="logo"><a href="index.html"><img src="favicon.ico" alt="logo" style="height: 25px; width: 25px;"> DBT Saathi</a></div>
     <nav>
       <a href="learn.html">Learn</a>
       <a href="quiz.html">Quiz</a>
@@ -51,8 +52,8 @@
         <li>Receive DBT in the mapped account</li>
       </ol>
       <div class="hero-buttons">
-        <button class="btn-primary">Try Quiz</button>
-        <button class="btn-secondary">Read FAQs</button>
+        <button class="btn-primary" id="try-quiz">Try Quiz</button>
+        <button class="btn-secondary" id="faq-btn">Read FAQs</button>
       </div>
     </div>
   </section>
@@ -71,7 +72,7 @@
       <div class="tool-card">
         <h3>Gamified Quiz</h3>
         <p>Scenarios on seeding, NPCI mapping, safety</p>
-        <button class="btn-primary">Start Quiz</button>
+        <button class="btn-primary" id="st-quiz">Start Quiz</button>
       </div>
       <div class="tool-card">
         <h3>Learn Library</h3>
@@ -86,6 +87,6 @@
     <p>Made for students • © 2025 DBT Saathi</p>
     <small>Aadhaar linked × DBT seeded explained clearly</small>
   </footer>
-
+ <script src="script.js"></script>
 </body>
 </html>

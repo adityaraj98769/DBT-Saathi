@@ -218,3 +218,108 @@ footer {
       font-weight: bold;
       margin-bottom: 20px;
     }
+    .quiz-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+#quiz-box {
+  margin: 20px 0;
+}
+
+.option {
+  display: block;
+  background: #f1f5f9;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.option:hover {
+  background: #e0e7ff;
+}
+
+.correct {
+  background: #16a34a !important;
+  color: white;
+}
+
+.wrong {
+  background: #dc2626 !important;
+  color: white;
+}
+
+.btn-primary {
+  padding: 10px 20px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+}
+
+.quiz-box,
+.result-box,
+.name-popup {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-top: 30px;
+}
+
+button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.option {
+  margin: 10px 0;
+}
+
+.hidden {
+  display: none !important;  /* ensure override */
+}
+
+.badge {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.popup-overlay {
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* when hidden applied */
+.popup-overlay.hidden {
+  display: none !important;
+}
+
