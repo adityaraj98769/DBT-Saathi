@@ -326,26 +326,26 @@ button:hover {
 @media (max-width: 768px) {
   /* Navbar adjustments */
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px 20px;
+    flex-wrap: nowrap;       /* row me hi rahe */
+    justify-content: space-between;
+    padding: 10px 20px;
   }
 
   .navbar nav {
-    margin-top: 10px;
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    flex-wrap: nowrap;       /* links row me hi rahe */
+    gap: 10px;
   }
 
   .navbar nav a {
-    margin: 5px 0;
+    font-size: 14px;         /* chhote screens ke liye size kam kiya */
+    margin: 0;
+  }
+.navbar .btn-primary {
+    padding: 6px 12px;
+    font-size: 14px;
   }
 
-  .navbar .btn-primary {
-    margin-top: 10px;
-    width: 100%;
-  }
 
   /* Hero section adjustments */
   .hero {
