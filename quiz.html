@@ -51,6 +51,50 @@
       </button>
     </div>
 
+    <!-- Mobile Menu -->
+    <div id="mobileMenu"
+      class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-50 md:hidden"
+      role="dialog" aria-modal="true" aria-labelledby="mobileMenuLabel">
+
+      <!-- Top Header: Logo + Title + Close -->
+      <div class="p-4 flex justify-between items-center border-b">
+
+        <!-- Logo + Text -->
+        <div class="flex items-center gap-2">
+          <div
+            class="w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-green-500 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5z" />
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 14l6.16-3.42A12.083 12.083 0 0112 21.5 12.083 12.083 0 015.84 10.58L12 14z" />
+            </svg>
+          </div>
+          <h2 id="mobileMenuLabel" class="font-semibold text-sm text-black-600">DBT Account Guide</h2>
+        </div>
+
+        <!-- Close Button -->
+        <button id="closeMenu"
+          class="text-gray-600 hover:text-red-500 focus:outline-none focus:ring-2 focus:ring-red-400"
+          aria-label="Close menu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Nav Links -->
+      <nav class="flex flex-col space-y-4 p-4 text-gray-700">
+        <a href="index.html" class="hover:text-blue-600 font-semibold">Home</a>
+        <a href="quiz.html" class="hover:text-blue-600 transition font-semibold">Quiz</a>
+        <a href="difference.html" class="hover:text-blue-600 font-semibold">What's the Difference?</a>
+        <a href="check-status.html" class="hover:text-blue-600 font-semibold">Check Status</a>
+        <a href="enable-dbt.html" class="text-blue-600 font-semibold">Setup Guide</a>
+        <a href="support.html" class="hover:text-blue-600 font-semibold">Support</a>
+      </nav>
+    </div>
+  </header>
+
     <div class="popup-overlay" id="popup">
     <div class="name-popup">
       <h2>Enter Your Name</h2>
