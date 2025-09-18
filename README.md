@@ -1,2 +1,0 @@
-# DBT-Saathi
-SIH project
